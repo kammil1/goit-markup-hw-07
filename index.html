@@ -84,7 +84,7 @@
 
     <main>
       <section class="main">
-        <div class="container">
+        <div class="container main-container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button data-modal-open type="button" class="main-button">
             Order Service
@@ -186,6 +186,7 @@
       <section class="section-three">
         <div class="container">
           <h2 class="header-two">Our Team</h2>
+
           <ul class="list section-three-list">
             <li class="section-three-card">
               <img
@@ -196,9 +197,9 @@
                 height="260"
               />
               <div class="section-three-employee">
-                <h3 class="header-three">Mark Guerrero</h3>
+                <h3 class="header-three-employee">Mark Guerrero</h3>
                 <p class="section-three-text">Product Designer</p>
-                <ul class="social-group">
+                <ul class="social-group-employee">
                   <li class="social-element">
                     <a class="social-link" href="#">
                       <svg class="social-svg" width="16" height="16">
@@ -240,9 +241,9 @@
                 height="260"
               />
               <div class="section-three-employee">
-                <h3 class="header-three">Tom Ford</h3>
+                <h3 class="header-three-employee">Tom Ford</h3>
                 <p class="section-three-text">Frontend Developer</p>
-                <ul class="social-group">
+                <ul class="social-group-employee">
                   <li class="social-element">
                     <a class="social-link" href="#">
                       <svg class="social-svg" width="16" height="16">
@@ -284,9 +285,9 @@
                 height="260"
               />
               <div class="section-three-employee">
-                <h3 class="header-three">Camila Garcia</h3>
+                <h3 class="header-three-employee">Camila Garcia</h3>
                 <p class="section-three-text">Marketing</p>
-                <ul class="social-group">
+                <ul class="social-group-employee">
                   <li class="social-element">
                     <a class="social-link" href="#">
                       <svg class="social-svg" width="16" height="16">
@@ -328,9 +329,9 @@
                 height="260"
               />
               <div class="section-three-employee">
-                <h3 class="header-three">Daniel Wilson</h3>
+                <h3 class="header-three-employee">Daniel Wilson</h3>
                 <p class="section-three-text">UI Designer</p>
-                <ul class="social-group">
+                <ul class="social-group-employee">
                   <li class="social-element">
                     <a class="social-link" href="#">
                       <svg class="social-svg" width="16" height="16">
@@ -420,7 +421,7 @@
     <footer class="footer">
       <div class="container footer-flex">
         <div class="footer-social-media">
-          <a class="link logo" href="./index.html"
+          <a class="link logo-footer" href="./index.html"
             >Web<span class="footer-studio">Studio</span></a
           >
           <p class="footer-text">
@@ -590,64 +591,68 @@
           <use href="./images/icons.svg#icon-close-black-18dp-2-1-2"></use>
         </svg>
       </button>
-
-      <ul class="toggle-list">
-        <li>
-          <a href="./index.html" class="link list-nav">Studio</a>
-        </li>
-        <li>
-          <a href="./portfolio.html" class="link list-nav">Portfolio</a>
-        </li>
-        <li><a href="" class="link list-nav">Contacts</a></li>
-      </ul>
-
-      <address class="toggle-address">
-        <ul class="list address-list">
+      <div>
+        <ul class="toggle-list">
           <li>
-            <a href="tel:+110001111111" class="link address-link toggle-number"
-              >+11 (000) 111-11-11</a
-            >
+            <a href="./index.html" class="link list-nav">Studio</a>
           </li>
           <li>
-            <a
-              href="mailto:info@devstudio.com"
-              class="link address-link toggle-mail"
-              >info@devstudio.com</a
-            >
+            <a href="./portfolio.html" class="link list-nav">Portfolio</a>
+          </li>
+          <li><a href="" class="link list-nav">Contacts</a></li>
+        </ul>
+      </div>
+      <div>
+        <address class="toggle-address">
+          <ul class="list address-list">
+            <li>
+              <a
+                href="tel:+110001111111"
+                class="link address-link toggle-number"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="link address-link toggle-mail"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="social-group-toggle">
+          <li class="social-element">
+            <a class="social-link" href="#">
+              <svg class="social-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-element">
+            <a class="social-link" href="#">
+              <svg class="social-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-element">
+            <a class="social-link" href="#">
+              <svg class="social-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-element">
+            <a class="social-link" href="#">
+              <svg class="social-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </address>
-
-      <ul class="social-group">
-        <li class="social-element">
-          <a class="social-link" href="#">
-            <svg class="social-svg" width="16" height="16">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-element">
-          <a class="social-link" href="#">
-            <svg class="social-svg" width="16" height="16">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-element">
-          <a class="social-link" href="#">
-            <svg class="social-svg" width="16" height="16">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-element">
-          <a class="social-link" href="#">
-            <svg class="social-svg" width="16" height="16">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      </div>
     </div>
 
     <script
