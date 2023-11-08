@@ -347,7 +347,7 @@ box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     padding: 112px 0;
     background-image: linear-gradient(var(--GREY, rgba(46, 47, 66, 0.70)),
             var(--GREY, rgba(46, 47, 66, 0.70))),
-        url(/images/background-mobile-x1.jpg);
+        url(https://github.com/kammil1/goit-markup-hw-07/blob/main/images/background-mobile-x1.jpg?raw=true);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -364,7 +364,7 @@ screen and (min-resolution:2dppx)  {
     .main {
         background-image: linear-gradient(var(--GREY, rgba(46, 47, 66, 0.70)),
                 var(--GREY, rgba(46, 47, 66, 0.70))),
-                url(/images/background-mobile-x2.jpg)
+                url(https://github.com/kammil1/goit-markup-hw-07/blob/main/images/background-mobile-x2.jpg?raw=true)
     }
 }
 
@@ -1217,7 +1217,7 @@ display: flex;
         padding: 112px 0;
         background-image: linear-gradient(var(--GREY, rgba(46, 47, 66, 0.70)),
                 var(--GREY, rgba(46, 47, 66, 0.70))),
-            url(/images/background-tablet-x1.jpg);
+            url(https://github.com/kammil1/goit-markup-hw-07/blob/main/images/background-tablet-x1.jpg?raw=true);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1231,7 +1231,7 @@ display: flex;
             .main {
                 background-image: linear-gradient(var(--GREY, rgba(46, 47, 66, 0.70)),
                         var(--GREY, rgba(46, 47, 66, 0.70))),
-                    url(/images/background-tablet=x2.jpg)
+                    url(https://github.com/kammil1/goit-markup-hw-07/blob/main/images/background-tablet=x2.jpg?raw=true)
             }
         }
 
@@ -2228,7 +2228,7 @@ display: flex;
         padding: 188px 0;
         background-image: linear-gradient(var(--GREY, rgba(46, 47, 66, 0.70)),
                 var(--GREY, rgba(46, 47, 66, 0.70))),
-            url(/images/background-deskop-x1.jpg);
+            url(https://github.com/kammil1/goit-markup-hw-07/blob/main/images/background-deskop-x1.jpg?raw=true);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -2243,7 +2243,7 @@ display: flex;
             .main {
                 background-image: linear-gradient(var(--GREY, rgba(46, 47, 66, 0.70)),
                         var(--GREY, rgba(46, 47, 66, 0.70))),
-                    url(/images/background-deskop-x2.jpg)
+                    url(https://github.com/kammil1/goit-markup-hw-07/blob/main/images/background-deskop-x2.jpg?raw=true)
             }
         }
 
