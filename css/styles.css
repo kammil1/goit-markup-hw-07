@@ -46,6 +46,19 @@ body{
 }
 
 
+
+@media screen and (min-width:768px){
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width:1158px){
+    .container{
+        max-width: 1158px;
+    }
+}
+
 /* ===================================== MOBILE 👇 ==================================== */
 /* ===================================== MOBILE 👇 ==================================== */
 
@@ -56,27 +69,27 @@ body{
 @media screen and (max-width: 767px){
 
 .header {
+    
         border-bottom: 1px solid var(--color-cornflower);
         background: var(--color-white, #FFF);
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     }
 
+
 .container {
-    width: 428px;
-    
+max-width: 428px;
+min-width: 320px;
+margin-left: auto;
+margin-right: auto;
 }
 
-.top-line {
-    
-}
 
 .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 25.5px;
-    padding-bottom: 23.5px;
-    padding-left: 16px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+
 }
 
 
@@ -88,6 +101,10 @@ color: var(--color-iris);
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    padding-top: 25.5px;
+    padding-left: 16px;
+    padding-bottom: 23.5px;
+
     
 }
 
@@ -127,10 +144,13 @@ color: var(--color-navy-blue);
 
 .list-nav {
     color: var(--color-navy-blue);
-    font-weight: 500;
-    padding: 24px 0;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
     transition-property: color;
     transition-duration: 250ms;
+    text-transform: capitalize;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -160,12 +180,93 @@ color: var(--color-navy-blue);
 }
 
 .menu-toggle{
-background-color: var(--color-white);
+    position: absolute;
+    min-height: 40px;
+    min-width: 40px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    
 }
 
-.menu-hamburger{
-fill: var(--color-navy-blue);
+.button-close-modal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border-radius: 50%;
+    color: var(--color-navy-blue);
+    background-color: var(--color-cornflower);
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+    transition-property: background-color, border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 
+}
+
+
+
+.toggle-list{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style:none;
+    gap: 40px;
+    
+}
+
+
+
+.toggle-address{
+    display: flex;
+    flex-direction: column;
+}
+
+.address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+    
+}
+
+.toggle-number{
+    font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        text-transform: capitalize;
+        color: var(--color-iris);
+}
+
+.toggle-mail{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.4px;
+}
+
+div#mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .menu-container{
@@ -179,10 +280,8 @@ padding-left: 40px;
 background-color: var(--color-white);
 z-index: 999;
 transform: translateX(100%);
-transition-property: transform;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+transition: transform 250ms ease-in-out;
+box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .menu-container.is-open{
@@ -191,19 +290,38 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .menu-container.menu-toggle{
     position: absolute;
+    right: 16px;
+}
+
+.social-group {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    list-style-type: none;
+    margin-bottom: 40px;
+    
+}
+
+
+
+
+.social-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    top: 24px;
-    right: 24px;
-    border: 1px solid var(--cornflower-color);
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: var(--white-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--color-iris);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-svg {
+    color: var(--color-cloud);
+    fill: var(--color-cloud);
+
 }
 
 
@@ -213,7 +331,19 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 /* ===================================== MAINN ==================================== */
 
 
+.main {
+    background-color: var(--color-navy-blue);
+    padding: 188px 0;
+    background-image: linear-gradient(var(--GREY, rgba(46, 47, 66, 0.70)),
+            var(--GREY, rgba(46, 47, 66, 0.70))),
+        url(https://github.com/kammil1/goit-markup-hw-05/blob/main/images/people-office.jpg?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
 
+
+}
 
 
 
@@ -247,20 +377,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
-.main{
-    background-color: var(--color-navy-blue);
-    padding: 188px 0;
-    background-image: linear-gradient(
-    var(--GREY, rgba(46, 47, 66, 0.70)),
-    var(--GREY, rgba(46, 47, 66, 0.70))),
-    url(https://github.com/kammil1/goit-markup-hw-05/blob/main/images/people-office.jpg?raw=true);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-    max-width: 1440px;
 
-}
 
 
 
@@ -442,15 +559,7 @@ padding: 120px 0;
     margin-top:8px;
 }
 
-.social-group{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    list-style-type: none;
-    margin-top: 8px;
 
-}
 
 .social-group-footer{
     display: flex;
@@ -462,24 +571,8 @@ padding: 120px 0;
 }
 
 
-.social-svg{
-    color: var(--color-cloud);
-    fill: var(--color-cloud);
 
-}
 
-.social-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--color-iris);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .social-link-footer{
     display: flex;
@@ -652,11 +745,6 @@ margin-right: 120px;
 
 
 
-.address-list{
-    display: flex;
-    gap: 40px;
-    padding: 24px 0;
-}
 
 
 
@@ -790,26 +878,7 @@ pointer-events: none;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-close-modal{
-position: absolute;
-display: flex;
-justify-content: center;
-align-items: center;
-top:24px;
-right: 24px;
-width: 24px;
-height: 24px;
-padding: 0;
-border-radius: 50%;
-color: var(--color-navy-blue);
-background-color: var(--color-cornflower);
-border: 1px solid rgba(0, 0, 0, 0.10);
-cursor: pointer;
-transition-property: background-color, border;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-transition-duration: 250ms;
 
-}
 
 .button-close-modal:hover,
 .button-close-modal:focus{
@@ -1068,5 +1137,29 @@ border-color: var(--color-iris);
     
 
 }
+
+}
+
+/* ======================================= TABLET 👇 =============================== */
+/* ======================================= TABLET 👇 =============================== */
+
+@media screen and (min-width:768px){
+
+
+}
+
+/* ======================================= NOT DESKOP 👇 =============================== */
+/* ======================================= NOT DESKOP 👇 =============================== */
+
+/* TUTAJ WKLEJAM KLASY KTÓRE MAJĄ NIE BYĆ WYSWIETLANE */
+/* .KLASA{
+    DISPLAY:NONE;
+} */
+
+
+/* ======================================= NOT DESKOP 👇 =============================== */
+/* ======================================= NOT DESKOP 👇 =============================== */
+
+@media screen and (min-width:1158px){
 
 }
